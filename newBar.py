@@ -41,4 +41,5 @@ plt.bar(x[15], y1[15], label="method16", width=0.9, color="#F8FA0D")
 
 plt.grid(linestyle = '--',linewidth =1, color= 'gray',alpha = 0.4)
 plt.legend()
+plt.savefig("./figure/color_schemes.png")
 plt.show()

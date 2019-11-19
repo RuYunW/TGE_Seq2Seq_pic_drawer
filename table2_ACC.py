@@ -30,4 +30,5 @@ plt.bar(x+0.6, [data[0][6], data[2][6], data[4][6]], width=0.1, label="TGE-Seq2S
 plt.xticks([index + 0.2 for index in x], x1)
 plt.grid(linestyle = '--',linewidth =1, color= 'gray',alpha = 0.4)
 plt.legend()
+plt.savefig("./figure/resultACC.png")
 plt.show()

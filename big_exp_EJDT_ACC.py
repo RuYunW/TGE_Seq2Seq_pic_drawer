@@ -30,5 +30,5 @@ plt.xticks([index for index in x], x1)
 
 plt.grid(linestyle = '--',linewidth =1, color= 'gray',alpha = 0.4)
 plt.legend(framealpha=0.5, loc='upper right')
-plt.savefig('bigLineEJDT_ACC.png')
+plt.savefig('./figure/bigLineEJDT_ACC.png')
 plt.show()
