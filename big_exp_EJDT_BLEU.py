@@ -3,7 +3,7 @@ import numpy as np
 import xlrd
 
 workbook = xlrd.open_workbook("tables.xlsx")
-sheet1 = workbook.sheet_by_index(1)
+sheet1 = workbook.sheet_by_index(5)
 
 x1 = ['EJDT-50', 'EJDT-100', 'EJDT-200', 'EJDT-500', 'EJDT-500+']
 
@@ -18,7 +18,7 @@ for i in range(39):
     _ = []
 
 plt.xlabel("Datasets")
-plt.ylabel("Accuracy Score (%)")
+plt.ylabel("BLEU Score (%)")
 plt.plot(x, [data[24][0], data[27][0], data[30][0], data[33][0], data[36][0]], '*--', label='NMT', linewidth=2, color="#352A86")
 plt.plot(x, [data[24][1], data[27][1], data[30][1], data[33][1], data[36][0]], 'v--', label='LPN', linewidth=2, color="#0262E0")
 plt.plot(x, [data[24][2], data[27][2], data[30][2], data[33][2], data[36][0]], '^--', label='SEQ2TREE', linewidth=2, color="#1389D2")
@@ -31,5 +31,5 @@ plt.xticks([index for index in x], x1)
 
 plt.grid(linestyle = '--',linewidth =1, color= 'gray',alpha = 0.4)
 plt.legend(framealpha=0.5, loc='upper right')
-plt.savefig('./figure/bigLineEJDT_ACC.png')
+plt.savefig('./figure/bigLineEJDT_BLEU.png')
 plt.show()

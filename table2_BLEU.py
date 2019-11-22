@@ -18,7 +18,7 @@ for i in range(6):
 
 plt.title("")
 plt.xlabel("Datasets")
-plt.ylabel("BLEU")
+plt.ylabel("BLEU-4 Score (%)")
 
 plt.bar(x, [data[1][0], data[3][0], data[5][0]], width=0.1, label="NMT", color="#352A86")  #NMT ACC
 plt.bar(x+0.1, [data[1][1], data[3][1], data[5][1]], width=0.1, label="LPN", color="#0262E0")
@@ -31,6 +31,6 @@ plt.bar(x+0.6, [data[1][6], data[3][6], data[5][6]], width=0.1, label="TGE-Seq2S
 plt.xticks([index + 0.2 for index in x], x1)
 plt.grid(linestyle = '--',linewidth =1, color= 'gray',alpha = 0.4)
 plt.legend(framealpha=0.5)
-plt.ylim(0, 1)
+plt.ylim(0, 0.31)
 plt.savefig("./figure/resultBLEU.png")
 plt.show()

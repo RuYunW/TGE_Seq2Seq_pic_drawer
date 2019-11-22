@@ -18,7 +18,7 @@ for i in range(6):
 
 plt.title("")
 plt.xlabel("Datasets")
-plt.ylabel("Accuracy")
+plt.ylabel("Accuracy Score (%)")
 plt.bar(x, [data[0][0], data[2][0], data[4][0]], width=0.1, label="NMT", color="#352A86")  #NMT ACC
 plt.bar(x+0.1, [data[0][1], data[2][1], data[4][1]], width=0.1, label="LPN", color="#0262E0")
 plt.bar(x+0.2, [data[0][2], data[2][2], data[4][2]], width=0.1, label="SEQ2TREE", color="#1389D2")
