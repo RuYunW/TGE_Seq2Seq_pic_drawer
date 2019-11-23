@@ -20,12 +20,12 @@ for i in range(39):
 plt.xlabel("Datasets")
 plt.ylabel("BLEU Score (%)")
 plt.plot(x, [data[24][0], data[27][0], data[30][0], data[33][0], data[36][0]], '*--', label='NMT', linewidth=2, color="#352A86")
-plt.plot(x, [data[24][1], data[27][1], data[30][1], data[33][1], data[36][0]], 'v--', label='LPN', linewidth=2, color="#0262E0")
-plt.plot(x, [data[24][2], data[27][2], data[30][2], data[33][2], data[36][0]], '^--', label='SEQ2TREE', linewidth=2, color="#1389D2")
-plt.plot(x, [data[24][3], data[27][3], data[30][3], data[33][3], data[36][0]], 's--', label='SNM', linewidth=2, color="#06A9C1")
-plt.plot(x, [data[24][4], data[27][4], data[30][4], data[33][4], data[36][0]], 'D--', label='ASN', linewidth=2, color="#4DBC91")
-plt.plot(x, [data[24][5], data[27][5], data[30][5], data[33][5], data[36][0]], 'x--', label='GB-CNN', linewidth=2, color="#F0B949")
-plt.plot(x, [data[24][6], data[27][6], data[30][6], data[33][6], data[36][0]], 'o-', label='TGE-Seq2Seq', linewidth=3, color="#D35230")
+plt.plot(x, [data[24][1], data[27][1], data[30][1], data[33][1], data[36][1]], 'v--', label='LPN', linewidth=2, color="#0262E0")
+plt.plot(x, [data[24][2], data[27][2], data[30][2], data[33][2], data[36][2]], '^--', label='SEQ2TREE', linewidth=2, color="#1389D2")
+plt.plot(x, [data[24][3], data[27][3], data[30][3], data[33][3], data[36][3]], 's--', label='SNM', linewidth=2, color="#06A9C1")
+plt.plot(x, [data[24][4], data[27][4], data[30][4], data[33][4], data[36][4]], 'D--', label='ASN', linewidth=2, color="#4DBC91")
+plt.plot(x, [data[24][5], data[27][5], data[30][5], data[33][5], data[36][5]], 'x--', label='GB-CNN', linewidth=2, color="#F0B949")
+plt.plot(x, [data[24][6], data[27][6], data[30][6], data[33][6], data[36][6]], 'o-', label='TGE-Seq2Seq', linewidth=3, color="#D35230")
 
 plt.xticks([index for index in x], x1)
 
